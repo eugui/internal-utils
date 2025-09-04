@@ -2,7 +2,7 @@
   "name": "depconfusion-demo",
   "version": "1.0.0",
   "private": true,
-  "description": "Test for dependency confusion in AWS CodeBuild/CodeArtifact",
+  "description": "Test for dependency confusion",
   "dependencies": {
     "corp-internal-utils-xyz": "1.0.0"
   }
