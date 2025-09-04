@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "== NPM Canary Test =="
+      - node --version
+      - npm --version
+      # try to install our fake dependency
+      - npm install || true
+      # log where npm tried to fetch from
+      - grep -Eio 'https?://[^ ]*npmjs\.org' /root/.npm/_logs/*log || true
